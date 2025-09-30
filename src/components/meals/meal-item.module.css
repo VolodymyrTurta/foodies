@@ -1,0 +1,62 @@
+.meal {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--meal-item-bg);
+  color: var(--font-color-main);
+
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.headerText {
+  margin: 0 2rem;
+}
+
+.headerText h2 {
+  font-size: 2.5rem;
+}
+
+.headerText p {
+  font-size: 1.5rem;
+  text-emphasis: initial;
+  margin-bottom: 2rem;
+}
+
+.content {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.actions {
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions a:link,
+.actions a:visited {
+  background-color: var(--font-highlight);
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+
+.actions a:hover,
+.actions a:active {
+  background-color: var(--font-highlight-tint);
+  transform: translateY(-2px);
+}

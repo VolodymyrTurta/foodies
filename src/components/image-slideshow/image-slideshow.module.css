@@ -1,0 +1,29 @@
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50rem;
+  padding: 5rem;
+
+  border-radius: 1rem;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers horizontally & vertically */
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide :global(img) {
+  object-fit: cover; /* fills container without stretching */
+  width: 100%;
+  height: 100%;
+
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7); /* subtle shadow */
+}
+
+.active {
+  opacity: 1;
+}

@@ -1,0 +1,37 @@
+.header {
+  padding: 4rem 5rem;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: var(--font-color-main);
+}
+
+.highlight {
+  color: var(--font-highlight); /* accent color */
+}
+
+.header p {
+  font-size: 2.5rem;
+  color: var(--font-color-main);
+  margin-bottom: 1.5rem;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: var(--font-highlight);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.cta a:hover {
+  background-color: var(--font-highlight-tint);
+  transform: translateY(-2px);
+}

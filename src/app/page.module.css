@@ -1,0 +1,119 @@
+/* HEADER */
+
+/* Full header section (below nav) */
+.header {
+  display: flex;
+  min-height: calc(100vh - 14rem); /* subtract the height of your top navbar */
+  width: 100%;
+
+  /* optional: spacing & background */
+  color: var(--font-color-main);
+}
+
+/* Slideshow takes half width */
+.slideshow {
+  flex: 1;
+  position: relative;
+  /* background: url("/images/slideshow-placeholder.jpg") center/cover no-repeat; */
+}
+
+/* Right column (hero + cta) */
+.header > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  align-items: flex-start; /* center horizontally */
+  padding: 5rem;
+}
+
+/* Hero text */
+.hero h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #e66300, #ffa32b);
+}
+
+.hero p {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ddd6cb;
+}
+
+/* Call-to-action links */
+.cta {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cta a:first-child {
+  color: #fc8f0a;
+}
+
+.cta a:last-child {
+  background: linear-gradient(to right, #e66300, #ffa32b);
+}
+
+.cta a {
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta a:first-child:hover {
+  background-color: #fc8f0a;
+  color: #fff;
+}
+
+.cta a:last-child:hover {
+  background: #ddd6cb;
+  color: #fc8f0a;
+}
+
+/* MAIN */
+
+.main {
+  padding: 4rem 2rem; /* space around main content */
+  color: var(--font-color-main);
+  font-size: 2rem;
+}
+
+/* Each section */
+.section {
+  max-width: 800px; /* keep text from stretching too wide */
+  margin: 0 auto 4rem; /* center & add bottom spacing */
+  line-height: 1.6; /* improve readability */
+}
+
+/* Section titles */
+.section h2 {
+  margin-bottom: 1rem;
+  text-align: center; /* center title */
+  position: relative;
+}
+
+/* Add a subtle underline to h2 */
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0.5rem auto 0;
+  background: #ddd6cb;
+  border-radius: 2px;
+}
+
+/* Paragraphs */
+.section p {
+  margin-bottom: 1rem;
+  text-align: center; /* optional: keep same alignment as heading */
+}
