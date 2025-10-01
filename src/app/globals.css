@@ -34,7 +34,7 @@ body {
 
 .not-found h1,
 .error h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   margin: 0px;
   font-weight: 900;
   color: #262626;
@@ -50,7 +50,7 @@ body {
 
 .not-found p,
 .error p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #ddd8d8;
 }

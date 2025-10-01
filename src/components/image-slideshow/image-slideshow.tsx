@@ -12,7 +12,7 @@ import schnitzelImage from "@/assets/schnitzel.jpg";
 import tomatoSaladImage from "@/assets/tomato-salad.jpg";
 import styles from "./image-slideshow.module.css";
 
-const images = [
+export const images = [
   { src: burgerImage, alt: "Burger image" },
   { src: curryImage, alt: "Curry image" },
   { src: dumplingsImage, alt: "Dumplings image" },

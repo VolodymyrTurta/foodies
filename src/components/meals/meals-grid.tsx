@@ -1,10 +1,10 @@
 import MealItem from "./meal-item";
 import styles from "./meals-grid.module.css";
 
-import { type MealItemType } from "./meal-item";
+import { type MealType } from "./meal-item";
 
 type MealsGridProps = {
-  meals: MealItemType[];
+  meals: MealType[];
 };
 
 export default function MealsGrid({ meals }: MealsGridProps) {

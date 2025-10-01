@@ -1,0 +1,29 @@
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #b3aea5;
+  font-weight: 500;
+}
+
+.image-picker {
+  list-style: none;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.image-picker img {
+  width: 8rem;
+  height: 6rem;
+}
+
+.image-picker img:hover {
+  cursor: pointer;
+}
+
+.choosen {
+  padding: 3px;
+  border: 2px orange solid;
+}

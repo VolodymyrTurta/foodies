@@ -3,13 +3,15 @@ import Link from "next/link";
 
 import styles from "./meal-item.module.css";
 
-export type MealItemType = {
+export type MealType = {
   id: string;
   title: string;
   slug: string;
   image: string;
   summary: string;
   creator: string;
+  creator_email: string;
+  instructions: string;
 };
 
 export default function MealItem({
@@ -18,7 +20,7 @@ export default function MealItem({
   image,
   summary,
   creator,
-}: MealItemType) {
+}: MealType) {
   return (
     <article className={styles.meal}>
       <header>

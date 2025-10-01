@@ -1,3 +1,5 @@
-export default function Loading() {
-  return <p>Loading ...</p>;
+import styles from "./loading.module.css";
+
+export default function MealLoadingPage() {
+  return <p className={styles.loading}>Loading Meals...</p>;
 }
