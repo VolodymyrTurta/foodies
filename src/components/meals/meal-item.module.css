@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
 
+  height: 100%;
   background-color: var(--meal-item-bg);
   color: var(--font-color-main);
 
   border-radius: 2rem;
   overflow: hidden;
+
+  position: relative;
 }
 
 .image {
@@ -34,13 +37,19 @@
 
 .content {
   margin: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.summary {
+  margin-bottom: 2rem;
 }
 
 .actions {
-  margin-top: 2rem;
-
   display: flex;
   justify-content: flex-end;
+  margin-top: auto;
 }
 
 .actions a:link,

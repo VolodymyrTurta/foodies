@@ -23,7 +23,7 @@ export default function MealItem({
     <article className={styles.meal}>
       <header>
         <div className={styles.image}>
-          <Image src={image} alt={title} width={100} height={100} />
+          <Image src={image} alt={title} width={400} height={400} />
         </div>
         <div className={styles.headerText}>
           <h2>{title}</h2>

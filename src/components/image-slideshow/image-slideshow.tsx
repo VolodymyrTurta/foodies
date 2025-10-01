@@ -44,7 +44,13 @@ export default function ImageSlideshow() {
             currentIndex === index ? styles.active : ""
           }`}
         >
-          <Image src={image.src} alt={image.alt} priority></Image>
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={400}
+            height={400}
+            priority
+          ></Image>
         </div>
       ))}
     </div>
