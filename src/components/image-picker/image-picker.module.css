@@ -1,29 +1,43 @@
-.title {
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: #b3aea5;
-  font-weight: 500;
-}
-
-.image-picker {
-  list-style: none;
-
+.input-container {
   display: flex;
   gap: 1rem;
 }
 
-.image-picker img {
-  width: 8rem;
-  height: 6rem;
+.preview {
+  width: 15rem;
+  height: 15rem;
+  font-size: 1.5rem;
+  color: var(--font-color-main);
+  border: var(--font-color-main) 2px solid;
+  display: flex;
+  align-items: center;
+
+  position: relative;
 }
 
-.image-picker img:hover {
+.preview img {
+  object-fit: cover;
+}
+
+.preview p {
+  text-align: center;
+}
+
+.input-container label {
+  background-color: #99948d;
+  height: fit-content;
+  color: #31302e;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.input-container label:hover {
   cursor: pointer;
+  background-color: #5a5855;
 }
 
-.choosen {
-  padding: 3px;
-  border: 2px orange solid;
+.input-container input {
+  display: none;
 }

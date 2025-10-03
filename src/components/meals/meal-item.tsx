@@ -3,16 +3,7 @@ import Link from "next/link";
 
 import styles from "./meal-item.module.css";
 
-export type MealType = {
-  id: string;
-  title: string;
-  slug: string;
-  image: string;
-  summary: string;
-  creator: string;
-  creator_email: string;
-  instructions: string;
-};
+import { type MealType } from "@/types/meal";
 
 export default function MealItem({
   title,
@@ -25,7 +16,7 @@ export default function MealItem({
     <article className={styles.meal}>
       <header>
         <div className={styles.image}>
-          <Image src={image} alt={title} width={400} height={400} />
+          <Image src={String(image)} alt={title} fill />
         </div>
         <div className={styles.headerText}>
           <h2>{title}</h2>

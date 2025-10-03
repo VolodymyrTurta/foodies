@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getMeals } from "@/lib/meals.js";
+import { getMeals } from "@/lib/meals.ts";
 
 import MealsGrid from "@/components/meals/meals-grid";
 import styles from "./page.module.css";

@@ -14,11 +14,14 @@
 
 .image {
   width: 100%;
+  aspect-ratio: 1 / 1; /* Ensure square images */
+  position: relative; /* Required for Image with fill */
 }
 
 .image img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .headerText {
